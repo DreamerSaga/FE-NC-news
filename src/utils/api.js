@@ -27,7 +27,7 @@ export const getArticles = (
   
   export const getSingleArticle = (articleId) => {
     return beNcNews.get(`/articles/${articleId}`).then((res) => {
-      return res.data;
+        return res.data.article;
     });
   };
   
@@ -53,7 +53,7 @@ export const getArticles = (
   };
   
   export const getTopics = () => {
-    return beNcNews.get('/topics').then((res) => {
+    return beNcNews.get('/topics/').then((res) => {
       return res.data.topics;
     });
   };
