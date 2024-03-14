@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { getSingleArticle} from '../utils/api';
+import { getSingleArticle, updateArticle} from '../utils/api';
 import { useParams } from 'react-router-dom';
-// import Comments from './Comments';
-// import Vote from './Vote';
+import Comments from './Comments';
+import Vote from './Vote';
 import NotFound from '../errors/NotFound';
 import BadRequest from '../errors/BadRequest';
 
@@ -51,14 +51,14 @@ export default function SingleArticle() {
 
         <div className='art-text'>
           <h3>{article.topic}</h3>
-          {/* <Vote
+          <Vote
             id={article.article_id}
             type='heart'
             votes={article.votes}
             update={updateArticle}
-          /> */}
+          /> 
 
-          {/* <p>Comments: {article.comment_count}</p> */}
+           <p>Comments: {article.comment_count}</p> 
 
           <p>by {' ' + article.author}</p>
 
@@ -69,7 +69,7 @@ export default function SingleArticle() {
         </div> 
       </div>
 
-      {/* <Comments article_id={article_id} /> */}
+      <Comments article_id={article_id} /> 
     </article>
   );
 }

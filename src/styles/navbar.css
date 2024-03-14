@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+/* --- primary header --- */
+
+.primary-header {
+  display: flex;
+  min-height: 120px;
+  padding: 1rem 2rem;
+  background-color: #c7b198;
+
+  .container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+
+
+  .primary-navigation{
+  
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+
+    .nav-list {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 2rem;
+      justify-content: right;
+      list-style: none;
+      align-items: center;
+
+      a {
+        display: flex;
+        width: 100%;
+        min-height: 80px;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+
+
+        span {
+          margin-left: auto;
+        }
+      }
+
+    }
+  }
+
+
+/* --- primary header END --- */
+
+
+
+/* --- Mobile Menu --- */
+
+@media (max-width: 900px) {
+
+  .primary-header {
+
+    .primary-navigation { 
+      position: absolute;
+      display: grid;
+      /* transition for height */
+      transition: grid-template-rows 500ms ease-in-out;
+      /* menu hidden */
+      grid-template-rows: 0fr;
+      width: 100%;
+      top: calc(1rem + 100%);
+      left: 0;
+      padding: 0;
+      z-index: 999;
+      background-color: #c7b198;
+      filter: brightness(105%);
+      box-shadow: 0 2px 5px rgb(0 0 0 /.1);
+
+      .nav-list {
+        display: block;
+        overflow: hidden;
+
+        li {
+          padding: 0 2rem;
+        }
+
+        li:first-child {
+          border-top: 2px solid #cea576;
+        }
+
+        li:last-child {
+          margin-bottom: 2rem;
+        }
+
+        a {
+          font-weight: 500;
+          font-size: 1.15rem;
+          min-height: 0;
+          padding: 1rem 0;
+          border-bottom: 1px solid rgb(0 0 0 /.1);
+        }
+
+        li:last-child a {
+          border: 0;
+        }
+
+        .user-profile span {
+          margin-left: 0;
+        }
+      }
+    }
+
+    #primary-toggle:checked~.primary-navigation {
+      grid-template-rows: 1fr;
+    }
+
+  }
+}
+
