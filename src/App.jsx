@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import Header from './components/Header';
 import NavBar from './components/NavBar';
 import Main from './components/Main'
-// import { Routes, Route } from 'react-router-dom';
+import Footer from './components/Footer';
+import './App.css';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
      <Header />
       <NavBar />
       <Main />
+      <Footer />
     </>
   );
 }

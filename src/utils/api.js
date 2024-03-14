@@ -31,6 +31,13 @@ export const getArticles = (
     });
   };
   
+  export const updateArticle = (articleId, update) => {
+    return beNcNews
+      .patch(`/articles/${articleId}`, { inc_votes: update })
+      .then((res) => {
+        return res.data;
+      });
+  };
 
   export const getComments = (articleId) => {
     return beNcNews.get(`/articles/${articleId}/comments`).then((res) => {
@@ -47,7 +54,8 @@ export const getArticles = (
   };
   
   export const deleteComment = (commentId) => {
-    return beNcNews.delete(`/comments/${commentId}`).then((res) => {
+    return beNcNews.delete(`/comments/${commentId}`)
+    .then((res) => {
       return res;
     });
   };

@@ -1,4 +1,9 @@
+
 body {
   margin: 0;
-  background-color: bisque;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #c7b198;
 }

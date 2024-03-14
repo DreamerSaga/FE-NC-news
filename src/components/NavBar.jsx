@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import { getTopics } from '../utils/api';
+import '../styles/navbar.css';
 
-// import User from './User';
-// import '../styles/navbar.css';
-
-export default function NavBar() {
+function NavBar() {
 
     const [topics, setTopics] = useState([]);
     useEffect(() => {
@@ -17,9 +15,9 @@ export default function NavBar() {
     return (
       <div className='wrapper'>
         <header className='primary-header'>
-
+         
           <div className='container'>
-          
+          <h1>NC NEWS</h1>
             <div className='nav-wrapper'>
               <input
                 type='checkbox'
@@ -30,7 +28,7 @@ export default function NavBar() {
 
               <label htmlFor='primary-toggle' className='primary-toggle'>
                 <div className='line' aria-hidden='true'></div>
-                <span className='visually-hidden'>Menu</span>
+                <br />
               </label>
 
               <nav className='primary-navigation' id='primary-navigation'>
@@ -56,3 +54,5 @@ export default function NavBar() {
       </div>
     );
   }
+
+  export default NavBar;

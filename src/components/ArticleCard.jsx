@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import '../styles/article-card.css';
+import '../styles/articlecard.css';
 
 export default function ArticleCard({ articleObj }) {
 

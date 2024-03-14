@@ -1,8 +1,36 @@
-# React + Vite
+# Frontend - NC NEWS project.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Background
 
-Currently, two official plugins are available:
+FE-NC-News is the front end application to the fictional social news website, NC News, built using react. The project is hosted on netlify and can be run locally using the instructions below. The back end is a restful API. See the [backend project](https://github.com/DreamerSaga/NC-News) for more info..
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Running the project locally
+
+## Software
+
+This project was completed using:
+
+    npm
+    Vite
+    axios
+    React with react router
+
+
+## Installation
+
+1. Clone a copy of the repo on to your machine.
+
+2. cd into the root directory
+
+3. To install dependencies, run the command
+
+```
+    npm install
+```
+
+
+To run the project locally use the command
+```
+    npm run dev
+```
+
