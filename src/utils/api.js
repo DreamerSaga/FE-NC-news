@@ -66,8 +66,8 @@ export const getArticles = (
     });
   };
   
-  export const getUser = (username) => {
-    return beNcNews.get('/users/' + username).then((res) => {
-      return res.data;
-    });
-  };
+  // export const getUser = (username) => {
+  //   return beNcNews.get('/users/' + username).then((res) => {
+  //     return res.data;
+  //   });
+  // };

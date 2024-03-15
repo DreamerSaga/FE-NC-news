@@ -16,12 +16,12 @@ export default function PostComment({ article_id, setComments }) {
     setIsLoading(true);
     
     postComment(article_id, {
-      username: 'anonymous', 
+      username: 'tickle122', 
       body: comment,
     })
       .then((response) => {
         if (response.status === 201) {
-          setComments((val) => [...val, response.data]);
+          setComments((val) => [...val, response.data.comment]);
           setComment('');
           setIsLoading(false);
           setIsPosted(true);
