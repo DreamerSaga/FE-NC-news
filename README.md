@@ -2,7 +2,7 @@
 
 ## Background
 
-FE-NC-News is the front end application to the fictional social news website, NC News, built using react. The project is hosted on netlify and can be run locally using the instructions below. The back end is a restful API. See the [backend project](https://github.com/DreamerSaga/NC-News) for more info..
+FE-NC-News is the front end application to the fictional social news website, NC News, built using react. The project is hosted on netlify and can be run locally using the instructions below. The back end is a restful API. See the [backend project](https://github.com/DreamerSaga/NC-News) for more info..  See the [deployed version](https://resonant-kitsune-1eccf5.netlify.app/)
 
 ----------------
 
@@ -36,3 +36,4 @@ To run the project locally use the command
     npm run dev
 ```
 
+Open the link http://localhost:xxxx
